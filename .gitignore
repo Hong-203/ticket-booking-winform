@@ -1,0 +1,67 @@
+# =========================
+# Build Folders
+# =========================
+bin/
+obj/
+Debug/
+Release/
+publish/
+
+# =========================
+# Visual Studio / IDE files
+# =========================
+*.user
+*.suo
+*.ncrunch*
+*.resharper*
+*.vscode/
+*.vs/
+
+# =========================
+# NuGet Packages
+# =========================
+packages/
+*.nupkg
+*.snupkg
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary / backup files
+# =========================
+*.tmp
+*.bak
+*.swp
+
+# =========================
+# Config / Sensitive files
+# =========================
+# Loại bỏ các file chứa thông tin nhạy cảm
+config/App.config
+*.config      # Nếu có các file config khác chứa secrets
+*.env         # Nếu dùng environment variables
+secrets.json  # Ví dụ file chứa secrets
+*.key         # Key files
+*.pem         # Private certificate
+*.pfx
+
+# =========================
+# Others
+# =========================
+# User-specific files
+*.sln.docstates
+*.userprefs
+*.pidb
+
+# JetBrains Rider
+.idea/
+*.sln.iml
