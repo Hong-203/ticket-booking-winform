@@ -105,51 +105,61 @@
     <Compile Include="BLL\movieBLL.cs" />
     <Compile Include="BLL\seatBLL.cs" />
     <Compile Include="BLL\showtimeBLL.cs" />
+    <Compile Include="BLL\ticketBLL.cs" />
     <Compile Include="DAL\database\DatabaseHelper.cs" />
     <Compile Include="DAL\database\DatabaseProvider.cs" />
     <Compile Include="DAL\repositories\authRepository.cs" />
     <Compile Include="DAL\repositories\movieRepository.cs" />
     <Compile Include="DAL\repositories\seatBookRepository.cs" />
     <Compile Include="DAL\repositories\showtimeRepository.cs" />
-    <Compile Include="GUI\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DAL\repositories\ticketRepository.cs" />
+    <Compile Include="GUI\Form1.cs" />
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmHomeMovie.cs">
-      <SubType>Form</SubType>
+    <Compile Include="GUI\frmBooking.cs" />
+    <Compile Include="GUI\frmBooking.Designer.cs">
+      <DependentUpon>frmBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmHomeMovie.cs" />
     <Compile Include="GUI\frmHomeMovie.Designer.cs">
       <DependentUpon>frmHomeMovie.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="GUI\frmLogin.cs" />
     <Compile Include="GUI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmMovieDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="GUI\frmMovieDetail.cs" />
     <Compile Include="GUI\frmMovieDetail.Designer.cs">
       <DependentUpon>frmMovieDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmSeat.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="GUI\frmSeat.cs" />
     <Compile Include="GUI\frmSeat.Designer.cs">
       <DependentUpon>frmSeat.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmShowtime.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="GUI\frmShowtime.cs" />
     <Compile Include="GUI\frmShowtime.Designer.cs">
       <DependentUpon>frmShowtime.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmTicketDetails.cs" />
+    <Compile Include="GUI\frmTicketDetails.Designer.cs">
+      <DependentUpon>frmTicketDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmTicketIdInput.cs" />
+    <Compile Include="GUI\frmTicketIdInput.Designer.cs">
+      <DependentUpon>frmTicketIdInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Program.cs" />
+    <Compile Include="GUI\SeatMapControl.cs" />
+    <Compile Include="GUI\SeatMapControl.Designer.cs">
+      <DependentUpon>SeatMapControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\SeatBookingRecord.cs" />
     <Compile Include="Models\Showtime.cs" />
+    <Compile Include="Models\TicketDetailsDto.cs" />
+    <Compile Include="Models\TicketRecord.cs" />
+    <Compile Include="Models\TicketSeatBookingRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\Logger.cs" />
     <Compile Include="Utils\Paginations.cs" />
@@ -164,6 +174,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="config\App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -174,9 +185,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="config\App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

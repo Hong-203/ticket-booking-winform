@@ -394,11 +394,6 @@ namespace TicketBookingStaffApp.GUI
             string showtimeId = s.Id;   // Thuộc tính Id của Showtime
             string price = s.PricePerSeat.ToString("N0") + " VND";
 
-            MessageBox.Show($"MovieId: {movieId}\nHallId: {hallId}\nShowtimeId: {showtimeId}",
-                "Thông tin Showtime",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-
             // Mở form Seat
             // Đảm bảo rằng frmSeat đã được định nghĩa
             // Nếu bạn đang mở form này từ một form cha (ví dụ: MainForm), bạn có thể cần truyền tham chiếu của nó.
@@ -409,7 +404,7 @@ namespace TicketBookingStaffApp.GUI
             // Ví dụ: public partial class frmSeat : Form { public frmSeat(string movieId, string hallId, string showtimeId) { /* ... */ } }
 
             // Nếu class frmSeat không có trong dự án, nó sẽ báo lỗi.
-            frmSeat seatForm = new frmSeat(movieId, hallId, showtimeId, s.PricePerSeat);
+            frmBooking seatForm = new frmBooking(movieId, hallId, showtimeId, s.PricePerSeat);
             seatForm.ShowDialog();
         }
     }
