@@ -65,3 +65,6 @@ secrets.json  # Ví dụ file chứa secrets
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+config/App.config
+*.config
