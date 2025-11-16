@@ -398,8 +398,8 @@ namespace TicketBookingStaffApp.GUI
                     .ToList();
 
                 int yPosition = 0;
-                int seatSize = 50;
-                int seatSpacing = 8;
+                int seatSize = 30;
+                int seatSpacing = 5;
 
                 foreach (var row in seatsByRow)
                 {
@@ -417,7 +417,7 @@ namespace TicketBookingStaffApp.GUI
                     pnlSeatMap.Controls.Add(lblRow);
 
                     var seatsInRow = row.OrderBy(s => ExtractSeatNumber(s.Name)).ToList();
-                    int xPosition = 50;
+                    int xPosition = 30;
 
                     for (int i = 0; i < seatsInRow.Count; i++)
                     {
@@ -493,7 +493,7 @@ namespace TicketBookingStaffApp.GUI
 
                         if ((i + 1) % 4 == 0 && i + 1 < seatsInRow.Count)
                         {
-                            xPosition += 20;
+                            xPosition += 10;
                         }
                     }
 
